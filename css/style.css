@@ -1,0 +1,27 @@
+* {padding: 0; margin: 0;}
+
+.navbar {
+	float: left;
+	background: darkblue;
+	width: 100%;
+}
+
+.navbar li a {
+	color: rgb(9, 9, 0);
+	text-decoration: underline;
+	padding: 40px;
+	display: block;
+	font-weight: bold;
+}
+
+.navbar li a: hover {
+	background: darkblue;
+	color: currentColor;
+}
+
+.center ul {
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
+	margin: auto;
+}

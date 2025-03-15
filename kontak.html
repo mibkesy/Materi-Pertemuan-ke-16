@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Aplikasi Website-Kontak</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+/* Pengaturan Tampilan Pada Form */
+/* Atur Ukuran Konten Pada Elemen Div (serta jenis font-nya) */
+div#main{
+width:830px;
+height:650px;
+margin:0 auto;
+font-family:'Segoe UI',sans-serif
+}
+/* Atur Posisi, Ukuran, Serta Tampilan Pada Form */
+div#form{
+text-align:center;
+border:1px solid #ccc;
+width:300px;
+padding:0 50px 15px;
+margin-top:20px;
+box-shadow:0 0 15px;
+border-radius:6px;
+float:left
+}
+/* Atur Heading */
+#main h1{
+margin-top:40px
+}
+/* Atur Heading Line */
+hr{
+margin-top:-5px
+}
+/* Atur Label */
+label{
+float:left;
+font-size:16px
+}
+/* Atur Kolom Input Untuk Subyek Text */
+input[type="text"]{
+width:100%;
+margin-top:10px;
+height:35px;
+margin-bottom:25px;
+padding:10px;
+border:3px solid #2BC1F2
+}
+/* Atur Kolom Textarea */
+textarea{
+width:100%;
+border:3px solid #2BC1F2;
+padding:10px;
+margin-bottom:25px;
+margin-top:10px;
+height:100px;
+resize:none
+}
+/* Atur Kolom Submit */
+input[type="submit"]{
+width:100%;
+padding:10px 45px;
+background-color:#2BC1F2;
+border:none;
+color:#fff;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+font-family:'Segoe UI',sans-serif
+}
+	</style>
+</head>
+<body>
+	<form name="form4" enctype="multipart/form-data" method="post" action="formSimpan.php">
+		<div align="center"></div>
+		<table width="679" border="0" align="center">
+			<center><h2>Aplikasi Website-Kontak</h2></center>
+				<br><br>
+			<label>Nama        :</label>
+					<br><br>
+				<input type="text" name="nama" value="" size="30" placeholder="masukan nama anda">
+				<br><br>
+			<label>Email	   :</label>
+					<br><br>
+				<input type="text" name="email" value="" size="30" placeholder="masukan email anda">
+				<br><br>
+			<label>Nomor Ponsel	:</label>
+				<br><br>
+				<input type="number" name="nomor_ponsel" size="90">
+				<br><br>
+			<label>Keterangan	:</label>
+					<br><br>
+				<textarea></textarea size="30">
+				<br><br>
+				<form action="edit-prose.php" method="get">
+					<br><br>
+			<button type="post" onclick="kirim()">Kirim</button>
+				<br><br>
+			<button type="submit" onclick="reset()">Reset</button>
+		</table>
+	</form>
+		<footer><div align="center">Copyright &copy; 2019-By: Software Creative Series</div></footer>
+</body>
+</html>

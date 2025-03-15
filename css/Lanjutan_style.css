@@ -1,0 +1,11 @@
+/*Software Creative Series 100*/
+.table {
+	font-family: cursive;
+	color: currentColor;
+	border: solid;
+}
+
+.table1, th, td {
+	border: 3px solid: #888;
+	padding: 10px 40px;
+}
